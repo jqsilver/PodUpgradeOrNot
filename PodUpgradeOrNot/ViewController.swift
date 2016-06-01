@@ -8,6 +8,7 @@
 
 import UIKit
 import ReproModels
+import ReproLogging
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     TestModels()
+    TestLogging()
   }
 
   override func didReceiveMemoryWarning() {

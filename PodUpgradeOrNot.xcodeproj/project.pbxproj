@@ -13,6 +13,7 @@
 		DDA8A1701CFF8C900050D8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA8A16F1CFF8C900050D8D9 /* Assets.xcassets */; };
 		DDA8A1731CFF8C900050D8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA8A1711CFF8C900050D8D9 /* LaunchScreen.storyboard */; };
 		DDA8A1971CFF8D820050D8D9 /* ReproModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA8A1941CFF8D670050D8D9 /* ReproModels.framework */; };
+		DDA8A1B91CFF8EA30050D8D9 /* ReproLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA8A1B61CFF8E950050D8D9 /* ReproLogging.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 			remoteGlobalIDString = DDA8A1831CFF8D5D0050D8D9;
 			remoteInfo = ReproModels;
 		};
+		DDA8A1B51CFF8E950050D8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA8A1B11CFF8E950050D8D9 /* ReproLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DDA8A1A41CFF8E730050D8D9;
+			remoteInfo = ReproLogging;
+		};
+		DDA8A1B71CFF8E9F0050D8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA8A1B11CFF8E950050D8D9 /* ReproLogging.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA8A1A31CFF8E730050D8D9;
+			remoteInfo = ReproLogging;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +56,7 @@
 		DDA8A1721CFF8C900050D8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA8A1741CFF8C900050D8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproModels.xcodeproj; path = ReproModels/ReproModels.xcodeproj; sourceTree = "<group>"; };
+		DDA8A1B11CFF8E950050D8D9 /* ReproLogging.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproLogging.xcodeproj; path = ReproLogging/ReproLogging.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA8A1B91CFF8EA30050D8D9 /* ReproLogging.framework in Frameworks */,
 				DDA8A1971CFF8D820050D8D9 /* ReproModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +75,7 @@
 		DDA8A15C1CFF8C900050D8D9 = {
 			isa = PBXGroup;
 			children = (
+				DDA8A1B11CFF8E950050D8D9 /* ReproLogging.xcodeproj */,
 				DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */,
 				DDA8A1671CFF8C900050D8D9 /* PodUpgradeOrNot */,
 				DDA8A1661CFF8C900050D8D9 /* Products */,
@@ -93,6 +111,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DDA8A1B21CFF8E950050D8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8A1B61CFF8E950050D8D9 /* ReproLogging.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +133,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDA8A1B81CFF8E9F0050D8D9 /* PBXTargetDependency */,
 				DDA8A1961CFF8D7E0050D8D9 /* PBXTargetDependency */,
 			);
 			name = PodUpgradeOrNot;
@@ -142,6 +169,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = DDA8A1B21CFF8E950050D8D9 /* Products */;
+					ProjectRef = DDA8A1B11CFF8E950050D8D9 /* ReproLogging.xcodeproj */;
+				},
+				{
 					ProductGroup = DDA8A1901CFF8D670050D8D9 /* Products */;
 					ProjectRef = DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */;
 				},
@@ -159,6 +190,13 @@
 			fileType = wrapper.framework;
 			path = ReproModels.framework;
 			remoteRef = DDA8A1931CFF8D670050D8D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDA8A1B61CFF8E950050D8D9 /* ReproLogging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReproLogging.framework;
+			remoteRef = DDA8A1B51CFF8E950050D8D9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -193,6 +231,11 @@
 			isa = PBXTargetDependency;
 			name = ReproModels;
 			targetProxy = DDA8A1951CFF8D7E0050D8D9 /* PBXContainerItemProxy */;
+		};
+		DDA8A1B81CFF8E9F0050D8D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReproLogging;
+			targetProxy = DDA8A1B71CFF8E9F0050D8D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
