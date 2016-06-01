@@ -12,7 +12,25 @@
 		DDA8A16E1CFF8C900050D8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA8A16C1CFF8C900050D8D9 /* Main.storyboard */; };
 		DDA8A1701CFF8C900050D8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA8A16F1CFF8C900050D8D9 /* Assets.xcassets */; };
 		DDA8A1731CFF8C900050D8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA8A1711CFF8C900050D8D9 /* LaunchScreen.storyboard */; };
+		DDA8A1971CFF8D820050D8D9 /* ReproModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA8A1941CFF8D670050D8D9 /* ReproModels.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDA8A1931CFF8D670050D8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DDA8A1841CFF8D5D0050D8D9;
+			remoteInfo = ReproModels;
+		};
+		DDA8A1951CFF8D7E0050D8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA8A1831CFF8D5D0050D8D9;
+			remoteInfo = ReproModels;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DDA8A1651CFF8C900050D8D9 /* PodUpgradeOrNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodUpgradeOrNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,7 @@
 		DDA8A16F1CFF8C900050D8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA8A1721CFF8C900050D8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA8A1741CFF8C900050D8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproModels.xcodeproj; path = ReproModels/ReproModels.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA8A1971CFF8D820050D8D9 /* ReproModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 		DDA8A15C1CFF8C900050D8D9 = {
 			isa = PBXGroup;
 			children = (
+				DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */,
 				DDA8A1671CFF8C900050D8D9 /* PodUpgradeOrNot */,
 				DDA8A1661CFF8C900050D8D9 /* Products */,
 			);
@@ -64,6 +85,14 @@
 			path = PodUpgradeOrNot;
 			sourceTree = "<group>";
 		};
+		DDA8A1901CFF8D670050D8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8A1941CFF8D670050D8D9 /* ReproModels.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +107,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDA8A1961CFF8D7E0050D8D9 /* PBXTargetDependency */,
 			);
 			name = PodUpgradeOrNot;
 			productName = PodUpgradeOrNot;
@@ -110,12 +140,28 @@
 			mainGroup = DDA8A15C1CFF8C900050D8D9;
 			productRefGroup = DDA8A1661CFF8C900050D8D9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DDA8A1901CFF8D670050D8D9 /* Products */;
+					ProjectRef = DDA8A18F1CFF8D670050D8D9 /* ReproModels.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DDA8A1641CFF8C900050D8D9 /* PodUpgradeOrNot */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DDA8A1941CFF8D670050D8D9 /* ReproModels.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReproModels.framework;
+			remoteRef = DDA8A1931CFF8D670050D8D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DDA8A1631CFF8C900050D8D9 /* Resources */ = {
@@ -141,6 +187,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDA8A1961CFF8D7E0050D8D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReproModels;
+			targetProxy = DDA8A1951CFF8D7E0050D8D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DDA8A16C1CFF8C900050D8D9 /* Main.storyboard */ = {
@@ -288,6 +342,7 @@
 				DDA8A1791CFF8C900050D8D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
